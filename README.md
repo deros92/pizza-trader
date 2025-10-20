@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/pizza-trader.git
+git clone https://github.com/deros92/pizza-trader.git
 cd pizza-trader
 ```
 
