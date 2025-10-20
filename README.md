@@ -185,11 +185,6 @@ This tool is designed for **educational and research purposes only**.
 - Consider consulting a licensed financial advisor
 - Use at your own risk
 
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [Datapizza AI](https://docs.datapizza.ai/0.0.2/) for the agent framework
