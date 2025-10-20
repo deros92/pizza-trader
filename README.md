@@ -197,9 +197,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [yfinance](https://github.com/ranaroussi/yfinance) for market data
 - [Finnhub](https://finnhub.io) for news API
 
-## 📧 Contact
 
-For questions or feedback, open an issue or reach out via [your contact info].
 
 
 
