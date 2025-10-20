@@ -1,0 +1,9 @@
+# Ambiente virtuale
+.venv/
+venv/
+
+# File sensibili / chiavi API
+.env
+*.env
+
+__pycache__
