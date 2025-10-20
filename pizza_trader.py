@@ -91,7 +91,7 @@ class MarketAnalyzer:
         """
         Analyze a list of ticker symbols based on price gaps, volume spikes, options data, and sector momentum.
 
-        This function takes a dictionary whose values are ticker symbols representing stocks or ETFs to be analyzed.
+        This function takes a dictionary whose values are ticker symbols representing stocks to be analyzed.
         For each ticker it downloads historical price data (last 252 days) and calculates:
         - Gap size percentage between last open price and previous close
         - Volume spike compared to 10-day average volume
@@ -189,7 +189,7 @@ class MarketAnalyzer:
         Generate a comprehensive set of expert-level technical trading signals including trend, momentum, volatility,
         volume, support/resistance, and candlestick pattern recognition for each ticker in the input dictionary.
 
-        For each ticker, downloads 2 years of daily OHLCV data via yFinance, uses TA-Lib for indicators and candlestick pattern detection,
+        For each ticker, downloads 252 days of daily OHLCV data via yFinance, uses TA-Lib for indicators and candlestick pattern detection,
         and constructs a rich profile of signals typically used by professional traders for entry/exit decisions.
 
         Signals include:
@@ -359,21 +359,18 @@ class MarketAnalyzer:
         Search online for recent news, sentiment, and buzz metrics using Finnhub API.
         
         Designed for AI agents to gather external market intelligence on tickers.
-        Fetches recent news (last 7 days), analyzes sentiment, detects catalysts,
-        and calculates a composite buzz score.
+        Fetches recent news (last 3 days), analyzes sentiment
         
         Args:
-            ticker_dict: Dictionary mapping company names to ticker symbols.
+            ticker_names:  ticker symbols.
             
         Returns:
-            Tuple containing:
-                - List of dictionaries with news metrics per ticker
-                - Dictionary mapping ticker to list of article summaries
+                A string containing the article summaries.
         """
         summaries = {}
         
         end_date = datetime.now()
-        start_date = end_date - timedelta(days=2)
+        start_date = end_date - timedelta(days=3)
         date_from = start_date.strftime('%Y-%m-%d')
         date_to = end_date.strftime('%Y-%m-%d')
         
