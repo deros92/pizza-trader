@@ -1,0 +1,7 @@
+yfinance
+pandas
+ta-lib
+python-dotenv
+requests
+datapizza-ai
+datapizza-ai-clients-google
