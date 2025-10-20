@@ -192,7 +192,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [Datapizza AI](https://datapizza.ai) for the agent framework
+- [Datapizza AI](https://docs.datapizza.ai/0.0.2/) for the agent framework
 - [TA-Lib](https://ta-lib.org) for technical analysis functions
 - [yfinance](https://github.com/ranaroussi/yfinance) for market data
 - [Finnhub](https://finnhub.io) for news API
