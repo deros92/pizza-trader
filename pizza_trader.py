@@ -1,11 +1,12 @@
+"""Here comes the Pizza Money!"""
 import os
+from datetime import datetime, timedelta
+import warnings
+from typing import Dict
 import pandas as pd
 import yfinance as yf
-import warnings
-from datetime import datetime, timedelta
 import talib
 import requests
-from typing import Dict
 from dotenv import load_dotenv
 from datapizza.clients.google import GoogleClient
 from datapizza.agents import Agent

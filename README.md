@@ -63,7 +63,7 @@ Get your API keys:
 
 Run the agent:
 ```bash
-python pizza_trader.py
+python main.py
 ```
 
 **Example queries:**
