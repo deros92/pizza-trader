@@ -53,11 +53,13 @@ Create a `.env` file in the project root:
 ```env
 GOOGLE_API_KEY=your_google_gemini_api_key
 FINNHUB_API_KEY=your_finnhub_api_key
+MARKETAUX_API_KEY=your_finnhub_api_key
 ```
 
 Get your API keys:
 - Google Gemini: [Google AI Studio](https://makersuite.google.com/app/apikey)
 - Finnhub: [Finnhub.io](https://finnhub.io/register)
+- Marketaux [Marketaux.com](https://www.marketaux.com/)
 
 ### Usage
 
@@ -103,6 +105,8 @@ The main analysis engine with three tool-decorated methods:
 3. **`finnhub_news_analysis(ticker_names: str)`**
    - Last 3 days of company news
 
+4. **`marketaux_news_analysis(ticker_names: str)`**
+   - Latest 10 articles
 
 #### Agent Configuration
 - **LLM**: Google Gemini 2.5 Flash
@@ -191,6 +195,7 @@ This tool is designed for **educational and research purposes only**.
 - [TA-Lib](https://ta-lib.org) for technical analysis functions
 - [yfinance](https://github.com/ranaroussi/yfinance) for market data
 - [Finnhub](https://finnhub.io) for news API
+- [Marketaux.com](https://www.marketaux.com/) for news API
 
 
 
