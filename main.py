@@ -16,6 +16,11 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 logger = logging.getLogger("PizzaMoney")
 
+# Redirect Python warnings to the log file instead of stderr.
+# This captures third-party warnings (e.g. datapizza thought_signature).
+logging.captureWarnings(True)
+logging.getLogger("py.warnings").handlers = logger.handlers
+logging.getLogger("py.warnings").propagate = False
 
 # ---------------------------------------------------------------------------
 # Validation
